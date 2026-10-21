@@ -1,6 +1,6 @@
 # Insider Studio
 
-**A private, all-in-one toolbox for your Windows laptop.** Notes, calendar and tasks, a resume builder, PDF editing,
+**A private, all-in-one toolbox for your Windows PC or Mac.** Notes, calendar and tasks, a resume builder, PDF editing,
 voice, images and more, in one app. **Everything runs on your computer: your notes, resumes and files never leave it.**
 No account, no subscription, no cloud.
 
@@ -8,11 +8,34 @@ No account, no subscription, no cloud.
 
 ## Download
 
-**[⬇ Download the latest version](../../releases/latest)**: under *Assets*, click `InsiderStudio-Setup-<version>.exe` (about 370 MB).
+**[⬇ Download the latest version](../../releases/latest)**, then under *Assets* pick yours:
 
-Needs Windows 10 or 11 (64-bit) and about 1 GB of free disk space. No administrator rights needed.
+| Your computer | File | Needs |
+|---|---|---|
+| **Windows** | `InsiderStudio-Setup-<version>.exe` (about 370 MB) | Windows 10 or 11, 64-bit, no admin rights |
+| **Mac** | `InsiderStudio-<version>-mac-arm64.dmg` (about 520 MB) | A Mac with an Apple chip (M1, M2, M3, M4…), macOS 12 or newer |
 
-## Install (2 minutes)
+Not sure which Mac you have? Apple menu  → **About This Mac**: "Chip: Apple M…" works; "Processor: Intel" isn't supported yet.
+
+## Install on a Mac (3 minutes)
+
+1. Open the downloaded `.dmg` and drag **Insider Studio** onto the **Applications** folder.
+2. Open **Applications** and double-click **Insider Studio**. The first time, macOS says it can't verify the app
+   (this preview isn't paid-signed by Apple yet). Click **Done**.
+3. Open **System Settings → Privacy & Security**, scroll down to *"Insider Studio" was blocked…*, click
+   **Open Anyway**, and confirm with your password or Touch ID.
+4. Insider Studio opens. From now on it opens normally, from Applications, Launchpad or the Dock.
+
+If macOS instead says the app *"is damaged"*, open **Terminal** and run this once, then open the app again:
+
+```
+xattr -dr com.apple.quarantine "/Applications/Insider Studio.app"
+```
+
+On a Mac your files go to **Documents/Insider Studio**, and notes, calendar and resumes to
+**~/Library/Application Support/Insider Studio**. To uninstall, drag the app from Applications to the Bin.
+
+## Install on Windows (2 minutes)
 
 1. Open the downloaded `InsiderStudio-Setup-….exe`.
 2. Windows may show a blue box, **"Windows protected your PC"**. That's because this preview isn't paid-signed yet.
